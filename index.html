@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" container">
+        <form class="form">
+            <div>
+                <h1 class="header"> payment form example</h1>
+            </div>
+            <div>
+                <p class="alert">
+                    some fields are missing
+                </p>
+            </div>
+            <div class="row ">
+                <div col="col-4">
+                    <label for="card-number" class="form-label"> card # </label>
+                    <input type="text" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+                <div col="col-4">
+                    <label for="cvc" class="form-label"> cvc # </label>
+                    <input type="text" id="cvc-number" placeholder="XXX">
+                </div>
+                <div col="col-4">
+                    <label for="amount" class="form-label"> amount # </label>
+                    <input type="text" id="amount" placeholder="$">
+                </div>
+            </div>
+            <div class="row">
+                <div col="col-6">
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name" placeholder="first name">
+                </div>
+                <div col="col-6">
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name" placeholder="last name">
+                </div>
+            </div>
+            <div class="row">
+                <div col="col-4">
+                    <label for="city">city</label>
+                    <input type="text" id="city" placeholder="city">
+                </div>
+                <div col="col-4">
+                    <label for="state">state</label>
+                    <select id="state">
+                        <option value="">Pick a state</option>
+                        <option value="AL">Alabama</option>
+                        <option vlaue="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                    </select>
+                </div>
+                <div col="col-4">
+                    <label for="postal-code">postal code</label>
+                    <input type="text" id="postal-code" placeholder="xxxxx">
+                </div>
+            </div>
+            <div class="row">
+                <div col="col-6">
+                    <label>We Accept:</label>
+                    <div class="payment-methods">
+                        <label class="payment-method"><input type="radio" name="payment-method"
+                                value="visa">Visa</label>
+                        <label class="payment-method"><input type="radio" name="payment-method"
+                                value="master-card">Master Card</label>
+                        <label class="payment-method"><input type="radio" name="payment-method"
+                                value="pay-pal">Pay-Pal</label>
+                    </div>
+                </div>
+                <div col="col-6" class="textarea-container">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="type a note here"></textarea>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="btn-group">
+                    <button class="btn btn-secondary">cancel</button>
+                    <button class="btn btn-primary">send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
